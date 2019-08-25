@@ -9,7 +9,7 @@ resources:
   - name: my-timer
     type: time
     source:
-      interval: 2m
+      interval: 1m
 
 jobs:
   - name: job-hello-world
