@@ -19,5 +19,7 @@ jobs:
       - get: resource-tutorial
       - get: my-timer
         trigger: true
+      - task: my-first
+        file: resource-tutorial/turorials/basic/task-hello-world/task_my_first.yml
       - task: hello-world
-        file: resource-tutorial/turorials/basic/task-hello-world/task-my-first.yml
+        file: resource-tutorial/tutorials/basic/task-hello-world/task_hello_world.yml
