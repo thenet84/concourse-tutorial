@@ -13,7 +13,3 @@ run:
 
   inputs:
   - name: resource-tutorial
-
-run:
-  path: ls
-  args: ["-alR"]
