@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git update-index --chmod=+x resource-tutorial/tutorials/basic/my-first-example/task_my_first.sh
+git update-index --chmod=+x task_my_first.sh
 
 set -e
 
