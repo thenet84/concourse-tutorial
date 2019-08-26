@@ -5,11 +5,13 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+inputs:
+  - name: resource-tutorial
+
 run:
-  path: ls -R
+  path: ls 
   args: ["-alR"]
   path: echo
   args: [my first task]
 
-  inputs:
-  - name: resource-tutorial
+ 
