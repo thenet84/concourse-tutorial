@@ -9,9 +9,6 @@ inputs:
   - name: resource-tutorial
 
 run:
-  path: ls 
-  args: ["-alR"]
-  path: echo
-  args: [my first task]
+  path: resource-tutorial/tutorials/basic/my-first-example/task_my_first.sh
 
  
