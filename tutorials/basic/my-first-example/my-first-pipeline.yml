@@ -1,0 +1,23 @@
+---
+resources:
+  - name: resource-tutorial
+    type: git
+    source:
+      uri: https://github.com/thenet84/concourse-tutorial.git
+      branch: develop
+
+  - name: my-timer
+    type: time
+    source:
+      interval: 1m
+
+jobs:
+  - name: job-hello-world
+    public: true
+    serial: true
+    plan:
+      - get: resource-tutorial
+      - get: my-timer
+        trigger: true
+      - task: my-first
+        file: resource-tutorial/tutorials/basic/my-first-example/task_my_first.yml
