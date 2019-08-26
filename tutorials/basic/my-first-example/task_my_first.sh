@@ -1,8 +1,8 @@
 #!/bin/bash
 
-git update-index --chmod=+x task_my_first.sh
-
 set -e
+
+ls -R
 
 mkdir some-files
 echo "file1" > some-files/file1
