@@ -9,6 +9,7 @@ inputs:
   - name: resource-tutorial
 
 run:
-  path: resource-tutorial/tutorials/basic/my-first-example/task_my_first.sh
+  path: ls
+  args: ["-alR"]
 
  
