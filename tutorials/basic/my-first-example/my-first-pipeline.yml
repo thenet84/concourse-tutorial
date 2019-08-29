@@ -3,13 +3,11 @@ resources:
   - name: resource-tutorial
     type: git
     source:
-      uri: https://github.com/thenet84/concourse-tutorial.git
+      uri: https://github.com/thenet84/concourse-tutorial
       branch: develop
 
 jobs:
   - name: job-hello-world
-    public: true
-    serial: true
     plan:
       - get: resource-tutorial
         trigger: true
