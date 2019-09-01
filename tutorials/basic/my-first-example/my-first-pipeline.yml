@@ -13,3 +13,10 @@ jobs:
         trigger: true
       - task: my-first
         file: resource-tutorial/tutorials/basic/my-first-example/task_my_first.yml
+  - name: job-some-files
+    plan:
+      - get: some-files
+        trigger: true
+      - task: my-second
+        file: resource-tutorial/tutorials/basic/my-first-example/task_my_second.yml
+    

@@ -4,7 +4,7 @@ set -e
 
 echo "hello"
 
-ls -lR
+ls -l
 
 mkdir some-files
 echo "file1" > some-files/file1
@@ -14,7 +14,4 @@ echo "file4" > some-files/file4
 
 ls some-files/*
 
-docker pull docker/whalesay
-
-docker/whalesay
 

@@ -8,6 +8,9 @@ image_resource:
 inputs:
   - name: resource-tutorial
 
+outputs:
+  - name: some-files
+
 run:
   path: resource-tutorial/tutorials/basic/my-first-example/task_my_first.sh
 

@@ -1,0 +1,13 @@
+---
+platform: linux
+
+image-resource:
+  type: docker-image
+  souce: 
+    repository: busybox
+
+inputs: some-files
+
+run: 
+  path: ls
+  args: [-alR]
